@@ -6,7 +6,7 @@ import librosa
 
 app = Flask(__name__)
 
-# Load the trained models, scaler, and label encoder
+# Load the trained models, scaler, and genre dictionary
 models = {}
 models['svm'] = pickle.load(open('pickle/svm_model.pkl', 'rb'))
 models['knn'] = pickle.load(open('pickle/knn_model.pkl', 'rb'))
