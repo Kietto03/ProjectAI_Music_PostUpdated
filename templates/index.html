@@ -5,17 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music Genre Classification</title>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 
 <body>
     <div class="container">
-        <h1>Upload a WAV file for Genre Classification</h1>
-        <form action="/predict" method="post" enctype="multipart/form-data">
-            <input type="file" name="file">
-            <input type="submit" value="Predict">
+        <h1>Upload a WAV file to predict its genre</h1>
+        <form id="uploadForm" action="/predict" method="post" enctype="multipart/form-data">
+            <label for="file-upload" class="custom-file-upload">
+                Choose File
+            </label>
+            <input id="file-upload" type="file" name="file">
+            <div id="file-name"></div>
+            <!-- Element to display the selected file name -->
+            <button type="submit">Predict</button>
         </form>
+        <div id="loadingSpinner" class="loading-spinner">
+            <div class="spinner"></div>
+            <p>Loading...</p>
+        </div>
     </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 
 </html>
