@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #343a40;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-size: cover;
+    background-image: url("https://img.freepik.com/free-vector/gradient-music-notes-background_23-2151270122.jpg?w=1800&t=st=1718180054~exp=1718180654~hmac=df839b2b9e7f5691744113ef568beb3621652f00ea97bb5920cd9bad8ffa5a69");
+    background-position: center;
+}
+
+.container {
+    background: #ffffff;
+    padding: 2em;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 1em;
+}
+
+form {
+    margin-bottom: 1em;
+}
+
+input[type="file"] {
+    margin-bottom: 1em;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 0.5em 0;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
