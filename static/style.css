@@ -1,64 +1,99 @@
 body {
-    font-family: Arial, sans-serif;
-    color: #343a40;
+    font-family: 'Arial', sans-serif;
+    background-image: url("https://wallpapers.com/images/hd/cute-music-icons-abstract-doodle-ahxf8i16dgcm3rrr.jpg");
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
-    background-size: cover;
-    background-image: url("https://img.freepik.com/free-vector/gradient-music-notes-background_23-2151270122.jpg?w=1800&t=st=1718180054~exp=1718180654~hmac=df839b2b9e7f5691744113ef568beb3621652f00ea97bb5920cd9bad8ffa5a69");
-    background-position: center;
 }
 
 .container {
-    background: #ffffff;
-    padding: 2em;
-    border-radius: 25px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+    width: 80%;
+    max-width: 500px;
+    opacity: 0.9;
+    /* Lower the opacity */
 }
 
 h1 {
-    margin-bottom: 1em;
-}
-
-form {
-    margin-bottom: 1em;
+    color: #333;
 }
 
 input[type="file"] {
-    margin-bottom: 1em;
+    display: none;
 }
 
-input[type="submit"] {
-    background-color: #007bff;
-    color: #ffffff;
-    border: none;
-    padding: 0.5em 1em;
+.custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
     cursor: pointer;
+    background-color: #af4caf;
+    color: white;
     border-radius: 5px;
-    font-size: 1em;
+    opacity: 1;
+    /* Set button opacity to 100% */
 }
 
-input[type="submit"]:hover {
-    background-color: #0056b3;
+.custom-file-upload:hover {
+    background-color: #59125a;
+}
+
+button {
+    background-color: #af4caf;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    opacity: 1;
+    /* Set button opacity to 100% */
+}
+
+button:hover {
+    background-color: #59125a;
+}
+
+.loading-spinner {
+    display: none;
+    margin-top: 20px;
+}
+
+.spinner {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #3498db;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#file-name {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
 }
 
 ul {
     list-style-type: none;
+    /* Remove list dots */
     padding: 0;
-}
-
-li {
-    margin: 0.5em 0;
-}
-
-a {
-    text-decoration: none;
-    color: #007bff;
-}
-
-a:hover {
-    text-decoration: underline;
 }
